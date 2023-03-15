@@ -79,9 +79,72 @@ body {
 .container {
   max-width: 1197px;
   margin: 0 auto;
-  padding-left: 14px;
+  padding-left: 15px;
   padding-right: 15px;
 }
 
 .main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__text {
+  flex-basis: 490px;
+}
+
+.main__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.main__desc {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  margin-bottom: 41px;
+}
+
+.main__btn {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+}
+
+.main__btn_gradient {
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  margin-right: 20px;
+}
+.main__image {
+  flex-basis: calc(100% - 490px - 116px);
+}
+
+.main__img {
+  width: 100%;
+}
+
+.main__list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  gap: 111px;
+}
+
+.main__item {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.main__span {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
 }
