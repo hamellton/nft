@@ -167,7 +167,8 @@ body {
   font-weight: 700;
   text-align: center;
   line-height: 1.8;
-  margin-bottom: 4px;
+  max-width: 390px;
+  margin: 0 auto 4px;
 }
 
 .desc {
@@ -259,10 +260,32 @@ body {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   padding: 14px 20px;
   margin-top: 26px;
+  transition: .3s;
+  position: relative;
 }
 
 .card__link:hover {
   background: linear-gradient(45deg, #b75cff 33%, #671ae4 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card__link:after {
+  content: '';
+  background-image: url(../images/border.svg);
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .3s;
+}
+
+.card__link:hover:after {
+  opacity: 1;
+
 }
